@@ -39,4 +39,9 @@ public class UsuarioControlador {
         this.usuarioServico.apagar(id);
     }
 
+    @GetMapping("/maisidoso")
+    public Usuario getMaisIdoso() {
+        return this.usuarioServico.getUsuarioMaisIdoso();
+    }
+
 }
